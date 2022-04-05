@@ -8,12 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://felixvelazco.github.io/my_launchx_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mis expectativas</title>
+      <title>La cultura en el desarrollo de software.</title>
       <link>https://felixvelazco.github.io/my_launchx_blog/posts/intro/</link>
-      <pubDate>Mon, 21 Feb 2022 18:16:21 -0600</pubDate>
+      <pubDate>Mon, 04 Apr 2022 23:27:21 -0600</pubDate>
       
       <guid>https://felixvelazco.github.io/my_launchx_blog/posts/intro/</guid>
-      <description>Usa este post para anotar tus expectativas de la misión.</description>
+      <description>Hola a cualquier persona que este leyendo esto, y bienvenido a mi blog personal! 🤗
+En este primer post voy a abordar la cultura en el desarrollo de software desde mi propia perspectiva (que puede estar más o menos correcta, pero mia 😅)
+Como en cualquier disciplina, existe una serie de valores o prácticas que un determinado perfil deben de tener, y en el desarrollo de software no es la excepción.</description>
     </item>
     
   </channel>
