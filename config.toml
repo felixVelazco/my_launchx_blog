@@ -1,6 +1,6 @@
 baseURL = "https://felixvelazco.github.io/my_launchx_blog/"
 languageCode = "en-us"
-title = "Bitácora de Viaje-Felix Velazco"
+title = "Bitácora de Viaje"
 theme = "hugo-winston-theme"
 relativeURLs = true
 canonifyURLs = true
