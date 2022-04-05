@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Bitácora de Viaje-Felix Velazco</title>
+    <title>Categories on Bitácora de Viaje</title>
     <link>https://felixvelazco.github.io/my_launchx_blog/categories/</link>
-    <description>Recent content in Categories on Bitácora de Viaje-Felix Velazco</description>
+    <description>Recent content in Categories on Bitácora de Viaje</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://felixvelazco.github.io/my_launchx_blog/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
