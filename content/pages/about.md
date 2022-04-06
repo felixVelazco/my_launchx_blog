@@ -9,13 +9,13 @@ menu:
 
 Hola, aquí vas a leer un poco sobre mi 🤩
 
-> Excidit gente, si orat suo quaeque dura Calydon nata? Pars auro post stetit
-> adfusique imis amplexus. Agmina per fabricator
-> mittere Erymanthon habetque tot.
+> Ingeniero mecatrónico de la Universidad Autónoma de Ciudad Juárez. 
+> 1 semestre de intercambio en University of Fukui, Japón.
+> Gusta de aprender nuevas cosas y prepararse profesionalmente día a día
 
-**Cineres Nile ipsa** origine discurrunt adest Unde, et quem clausus, imo,
-virens quoque tales, potuit. Ingentes insilit corpore nutricis praebebat roganti
-licuit. Denique a vestros adulantum in bella lina parte et arte generi di igitur
-quis, digitis pedes. Cum resonant tamen, namque in anxia. Non nostri trahens
-ancora.
+De Ciudad Juárez, soy un ingeniero de 25 años que quizo prepararse más en el campo
+de la programación, por lo que vi la oportunidad que ofrecían en **LaunchX**, y no
+dude ni un momento en tomarla.
+
+Esperando nuevos desafios y nuevas aventuras 😁
 
