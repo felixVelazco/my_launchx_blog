@@ -6,7 +6,19 @@
     <description>Recent content in Launch X Bitácora de viaje on Bitácora de Viaje</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Apr 2022 23:27:21 -0600</lastBuildDate><atom:link href="https://felixvelazco.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://felixvelazco.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entender mi IDE</title>
+      <link>https://felixvelazco.github.io/my_launchx_blog/posts/post_2/</link>
+      <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://felixvelazco.github.io/my_launchx_blog/posts/post_2/</guid>
+      <description>Atajos para Visual Studio Code Mover linea de código arriba o abajo  Alt+ ↑or Alt+ ↓  Comentarios Línea o líneas completas  Ctrl+ /  Fragmento seleccionado  Shift+Alt+A  Crear nuevo archivo Cuando un archivo no existe puedes crearlo con
+Ctrl+ Click derechosobre el directorio
+Ejemplo:
+&amp;lt;script src=&amp;#39;assets/js/app.js&amp;#39;&amp;gt;&amp;lt;/script&amp;gt; Definiciones Ir a las definiciones Con esta herramientas podrás acceder al documento donde se encuentra la función o variable a buscar.</description>
+    </item>
+    
     <item>
       <title>La cultura en el desarrollo de software</title>
       <link>https://felixvelazco.github.io/my_launchx_blog/posts/intro/</link>
