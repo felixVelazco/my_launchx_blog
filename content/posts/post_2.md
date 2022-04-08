@@ -1,6 +1,6 @@
 ---
 title: "Entender mi IDE"
-date: 2022-07-04
+date: 2022-04-07
 description: 'Pequeños shortcuts para mejor manejo de IDE'
 ---
 
