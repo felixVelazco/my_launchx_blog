@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title> - Bitácora de Viaje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://felixvelazco.github.io/my_launchx_blog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="../../css/style.min.4f4767d518839223786999cdb69fc7a63791220ecccd236bc732a5f998aaee2d.css">
+  
+
+  
+    
+    <meta property="og:title" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://felixvelazco.github.io/my_launchx_blog/posts/post_4/"/>
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@visual_partner"/>
+    <meta name="twitter:creator" content="@visual_partner"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://felixvelazco.github.io/my_launchx_blog/">Bitácora de Viaje</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-aboutme">
+                <a href="../../pages/about/">AboutMe</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="../../posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1><span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <p>title: &ldquo;Jest sir!&rdquo;
+date: 2022-04-02
+description: &lsquo;Pruebas unitarias con Jest&rsquo;</p>
+<p>Hola a todos los que lean esto! En el post anterior hablé de manera general sobre la definición y la utilidad de las muestras unitarias en la creación de
+software, ahora toca ver la versión práctica del código, así que vamos a darle!</p>
+<h2 id="requisitos">Requisitos</h2>
+<ul>
+<li>Javascript</li>
+<li>npm</li>
+<li>Node JS</li>
+<li>Jest</li>
+</ul>
+<h2 id="requerimientos-de-la-aplicación">Requerimientos de la aplicación</h2>
+<p>Para este ejercicio, debemos de crear una clase <code>Mascota</code>, la cual al instanciar un objeto, recibirá de parámetros <code>name</code>, <code>age</code>, <code>race</code>, <code>canSwim</code>, <code>favoriteFoods</code>
+y debe tener los métodos <code>getName</code>, <code>setAge</code>.</p>
+<h2 id="pasos">Pasos</h2>
+<h3 id="crear-la-carpeta-de-tu-proyecto">Crear la carpeta de tu proyecto</h3>
+<p>Para este proyecto crearé una carpeta llamada <!-- raw HTML omitted -->Mascota<!-- raw HTML omitted --> donde estará la raiz de nuestro proyecto</p>
+<h3 id="crear-nuestro-packagejson">Crear nuestro <code>package.json</code></h3>
+<p>En la raiz de nuestro proyecto, abriremos una terminal, donde ejecutaremos el siguiente comando:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">felix@bar:mascota$ npm init
+</span></code></pre></div><p>Te aparecerán después varias preguntas que puedes responder u omitir simplemente presionando <!-- raw HTML omitted -->Enter<!-- raw HTML omitted --> en cada una, y listo!</p>
+<p>Si abrimos nuestro archivo package.json, veremos algo como esto:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+  <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;mascota&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;1.0.0&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;\&#34;Clase para crear una mascota\&#34;&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;main&#34;</span><span class="p">:</span> <span class="s2">&#34;index.js&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;scripts&#34;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&#34;test&#34;</span><span class="p">:</span> <span class="s2">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>
+  <span class="p">},</span>
+  <span class="nt">&#34;author&#34;</span><span class="p">:</span> <span class="s2">&#34;felix velazco&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;license&#34;</span><span class="p">:</span> <span class="s2">&#34;ISC&#34;</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="agregar-jest-a-nuestro-packagejson">Agregar <code>Jest</code> a nuestro <code>package.json</code></h3>
+<p>Para eso ejecutaremos el comando:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">felix@bar:mascota$ npm install --save-dev jest
+</span></code></pre></div><p>Este comando lo que hace es descargar la carpeta <code>node_modules</code> en nuestro proyecto, y especifica que el <code>node_module</code> jest será utilizado como
+devDependencies (es decir, son dependencias que sirven solo cuando el proyecto está en desarrollo, pero no para el producto final, como lo son las
+pruebas unitarias)</p>
+<p>Y si nos metemos nuevamente a nuestro archivo <code>package.json</code> vemos que este a sido modificado, agregando nuestras <code>devDependencies</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+  <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;mascota&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;1.0.0&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;\&#34;Clase para crear una mascota\&#34;&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;main&#34;</span><span class="p">:</span> <span class="s2">&#34;index.js&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;scripts&#34;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&#34;test&#34;</span><span class="p">:</span> <span class="s2">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>
+  <span class="p">},</span>
+  <span class="nt">&#34;author&#34;</span><span class="p">:</span> <span class="s2">&#34;felix velazco&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;license&#34;</span><span class="p">:</span> <span class="s2">&#34;ISC&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;devDependencies&#34;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&#34;jest&#34;</span><span class="p">:</span> <span class="s2">&#34;^27.5.1&#34;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>Ya por último, modificamos la línea de <code>&quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</code> por <code>&quot;test&quot;: &quot;node ./node_modules/jest/bin/jest&quot;</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">NOTA: esta sintaxis solo aplica para windows, para sistemas Linux/Unix usar `&#34;test&#34;: &#34;node ./node_modules/.bin/jest&#34;`
+</code></pre></div><p>Y así nuestro <code>package.json</code> quedó listo</p>
+<h3 id="creación-de-nuestras-carpetas-y-archivos">Creación de nuestras carpetas y archivos</h3>
+<p>Pasamos a crear dos carpetas llamadas <!-- raw HTML omitted -->app<!-- raw HTML omitted --> y <!-- raw HTML omitted -->test<!-- raw HTML omitted -->. En la primer carpeta crearemos un archivo llamado <!-- raw HTML omitted -->mascota.js<!-- raw HTML omitted -->, mientras que en
+la segunda un archivo <!-- raw HTML omitted -->mascota.test.js<!-- raw HTML omitted -->. Debe de quedar una distribución similar a la siguiente:</p>
+<p><img src="https://user-images.githubusercontent.com/79220309/164637006-56f750f7-d55d-4482-b2ab-d78a3a93de68.png" alt="Directorio con todos los archivos"></p>
+<h3 id="aplicar-el-tdd">Aplicar el TDD</h3>
+<p>En el post anterior había mencionado que el TDD es una técnica que ayuda a crear código en base a pruebas, y que consta de 3 pasos.</p>
+<h4 id="1-hacer-una-prueba-que-falle">1. Hacer una prueba que falle</h4>
+<p>Abrimos el archivo <code>mascota.test.js</code> y creamos el siguiente código</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">//Con esto importamos la clase mascota
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">Mascota</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;./../app/mascota&#34;</span><span class="p">);</span>
+
+<span class="c1">//Crea una suite donde estarán todas tus pruebas
+</span><span class="c1"></span><span class="nx">describe</span><span class="p">(</span><span class="s1">&#39;Unit test suite para Clase Mascota&#39;</span><span class="p">,()</span> <span class="p">=&gt;{</span>
+<span class="c1">//Aqui se pone la primera prueba, que consiste en crear un objeto de la clase mascota
+</span><span class="c1"></span>  <span class="nx">test</span><span class="p">(</span><span class="s1">&#39;1) Crear un objeto&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="c1">//Se crea el objeto con los atributos que queramos
+</span><span class="c1"></span>    <span class="kr">const</span> <span class="nx">perro</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Mascota</span><span class="p">(</span><span class="s1">&#39;doggy&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;shiba&#39;</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;croquetas&#39;</span><span class="p">,</span> <span class="s1">&#39;sobres&#39;</span><span class="p">,</span> <span class="s1">&#39;platano&#39;</span><span class="p">]);</span>
+
+    <span class="c1">//en expect ponemos la variable que queremos analizar
+</span><span class="c1"></span>    <span class="c1">//toBe nos dice que a lo que tiene que ser igual (existen mas funciones ademas de toBe)
+</span><span class="c1"></span>    <span class="nx">expect</span><span class="p">(</span><span class="nx">perro</span><span class="p">.</span><span class="nx">name</span><span class="p">).</span><span class="nx">toBe</span><span class="p">(</span><span class="s2">&#34;doggy&#34;</span><span class="p">);</span>
+  <span class="p">})</span>
+<span class="p">})</span>
+</code></pre></div><p>Guardamos cambios, nos vamos a nuestra consola y corremos la prueba</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">felix@bar:mascota/test$ npm test mascota.test.js
+</span><span class="go"></span><span class="err">
+</span><span class="err"></span><span class="gp">&gt; </span>mascota@1.0.0 <span class="nb">test</span>
+<span class="gp">&gt; </span>node ./node_modules/jest/bin/jest <span class="s2">&#34;test/mascota.test.js&#34;</span>
+<span class="err">
+</span><span class="err"></span><span class="go"> FAIL  test/mascota.test.js
+</span><span class="go">  Unit test suite para Clase Mascota
+</span><span class="go">    × 1) Crear un objeto (1 ms)
+</span><span class="go"></span><span class="err">
+</span><span class="err"></span><span class="go">  ● Unit test suite para Clase Mascota › 1) Crear un objeto
+</span><span class="go"></span><span class="err">
+</span><span class="err"></span><span class="go">    TypeError: Mascota is not a constructor
+</span><span class="go"></span><span class="err">
+</span><span class="err"></span><span class="go">       7 |   test(&#39;1) Crear un objeto&#39;, () =&gt; {
+</span><span class="go">       8 |     //Se crea el objeto con los atributos que queramos
+</span><span class="go">    &gt;  9 |     const perro = new Mascota(&#39;doggy&#39;, 2, &#39;shiba&#39;, false, [&#39;croquetas&#39;, &#39;sobres&#39;, &#39;platano&#39;]);
+</span><span class="go">         |                   ^
+</span><span class="go">      10 |
+</span><span class="go">      11 |     //en expect ponemos la variable que queremos analizar
+</span><span class="go">      12 |     //toBe nos dice que a lo que tiene que ser igual (existen mas funciones ademas de toBe)
+</span><span class="go"></span><span class="err">
+</span><span class="err"></span><span class="go">      at Object.&lt;anonymous&gt; (test/mascota.test.js:9:19)
+</span><span class="go"></span><span class="err">
+</span><span class="err"></span><span class="go">Test Suites: 1 failed, 1 total
+</span><span class="go">Tests:       1 failed, 1 total
+</span><span class="go">Snapshots:   0 total
+</span><span class="go">Time:        0.696 s, estimated 1 s
+</span><span class="go">Ran all test suites matching /test\\mascota.test.js/i.
+</span></code></pre></div><p>La prueba tronó, como debería de ser, debido a que aún no tenemos nada de código hecho. Una vez que tienes lo que debes de recibir</p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/" title="twitter" target="_blank" rel="noopener">
+          <img src="../../images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/felixVelazco" title="github" target="_blank" rel="noopener">
+          <img src="../../images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="../../js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

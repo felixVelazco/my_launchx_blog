@@ -51,5 +51,16 @@ Si de casualidad encontraste este blog sin formar parte de LaunchX (que la verda
 Es un curso de programación para generar Full-stack Developers dado por Innovaccion Virtual, el cual consiste de dos módulos: Front-end y Back-end, del cual, el primer módulo ya fue concluido y es de donde les platicaré la experiencia que he vivido.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://felixvelazco.github.io/my_launchx_blog/posts/post_4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://felixvelazco.github.io/my_launchx_blog/posts/post_4/</guid>
+      <description>title: &amp;ldquo;Jest sir!&amp;rdquo; date: 2022-04-02 description: &amp;lsquo;Pruebas unitarias con Jest&amp;rsquo;
+Hola a todos los que lean esto! En el post anterior hablé de manera general sobre la definición y la utilidad de las muestras unitarias en la creación de software, ahora toca ver la versión práctica del código, así que vamos a darle!
+Requisitos  Javascript npm Node JS Jest  Requerimientos de la aplicación Para este ejercicio, debemos de crear una clase Mascota, la cual al instanciar un objeto, recibirá de parámetros name, age, race, canSwim, favoriteFoods y debe tener los métodos getName, setAge.</description>
+    </item>
+    
   </channel>
 </rss>
