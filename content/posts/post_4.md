@@ -1,6 +1,6 @@
 ---
 title: "Jest sir!"
-date: 2022-04-02
+date: 2022-04-22
 description: 'Pruebas unitarias con Jest'
 ---
 
