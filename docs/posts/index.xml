@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://felixvelazco.github.io/my_launchx_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Jest sir!</title>
+      <link>https://felixvelazco.github.io/my_launchx_blog/posts/post_4/</link>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://felixvelazco.github.io/my_launchx_blog/posts/post_4/</guid>
+      <description>Hola a todos los que lean esto! En el post anterior hablé de manera general sobre la definición y la utilidad de las muestras unitarias en la creación de software, ahora toca ver la versión práctica del código, así que vamos a darle!
+Requisitos  Javascript npm Node JS Jest  Requerimientos de la aplicación Para este ejercicio, debemos de crear una clase Mascota, la cual al instanciar un objeto, tendrá los atributos name, age, race, canSwim, favoriteFoods.</description>
+    </item>
+    
+    <item>
       <title>Pruebas, pruebas y más pruebas!</title>
       <link>https://felixvelazco.github.io/my_launchx_blog/posts/post_3/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
@@ -49,16 +59,6 @@ Como en cualquier disciplina, existe una serie de valores o prácticas que un de
       <description>Hola de nuevo! Les platicaré un poco de mi experiencia en el curso de Launch-X 🚀!
 Si de casualidad encontraste este blog sin formar parte de LaunchX (que la verdad dudo mucho que eso pase 😅), déjenme les doy un poco de contexto de que es!
 Es un curso de programación para generar Full-stack Developers dado por Innovaccion Virtual, el cual consiste de dos módulos: Front-end y Back-end, del cual, el primer módulo ya fue concluido y es de donde les platicaré la experiencia que he vivido.</description>
-    </item>
-    
-    <item>
-      <title>Jest sir!</title>
-      <link>https://felixvelazco.github.io/my_launchx_blog/posts/post_4/</link>
-      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://felixvelazco.github.io/my_launchx_blog/posts/post_4/</guid>
-      <description>Hola a todos los que lean esto! En el post anterior hablé de manera general sobre la definición y la utilidad de las muestras unitarias en la creación de software, ahora toca ver la versión práctica del código, así que vamos a darle!
-Requisitos  Javascript npm Node JS Jest  Requerimientos de la aplicación Para este ejercicio, debemos de crear una clase Mascota, la cual al instanciar un objeto, tendrá los atributos name, age, race, canSwim, favoriteFoods.</description>
     </item>
     
   </channel>
