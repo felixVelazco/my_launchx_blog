@@ -52,14 +52,13 @@ Es un curso de programación para generar Full-stack Developers dado por Innovac
     </item>
     
     <item>
-      <title></title>
+      <title>Jest sir!</title>
       <link>https://felixvelazco.github.io/my_launchx_blog/posts/post_4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://felixvelazco.github.io/my_launchx_blog/posts/post_4/</guid>
-      <description>title: &amp;ldquo;Jest sir!&amp;rdquo; date: 2022-04-02 description: &amp;lsquo;Pruebas unitarias con Jest&amp;rsquo;
-Hola a todos los que lean esto! En el post anterior hablé de manera general sobre la definición y la utilidad de las muestras unitarias en la creación de software, ahora toca ver la versión práctica del código, así que vamos a darle!
-Requisitos  Javascript npm Node JS Jest  Requerimientos de la aplicación Para este ejercicio, debemos de crear una clase Mascota, la cual al instanciar un objeto, recibirá de parámetros name, age, race, canSwim, favoriteFoods y debe tener los métodos getName, setAge.</description>
+      <description>Hola a todos los que lean esto! En el post anterior hablé de manera general sobre la definición y la utilidad de las muestras unitarias en la creación de software, ahora toca ver la versión práctica del código, así que vamos a darle!
+Requisitos  Javascript npm Node JS Jest  Requerimientos de la aplicación Para este ejercicio, debemos de crear una clase Mascota, la cual al instanciar un objeto, tendrá los atributos name, age, race, canSwim, favoriteFoods.</description>
     </item>
     
     <item>
