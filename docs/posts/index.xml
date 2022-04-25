@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://felixvelazco.github.io/my_launchx_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Git o Github? esa es la cuestión</title>
+      <link>https://felixvelazco.github.io/my_launchx_blog/posts/post_5-git-and-github/</link>
+      <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://felixvelazco.github.io/my_launchx_blog/posts/post_5-git-and-github/</guid>
+      <description>Cuantas veces hemos escuchado hablar sobre Github y Git son la misma cosa? Y pues, si bien, están relacionadas entre si, no son lo mismo, y hoy veremos esas diferencias, así como para que se utilizan en el mundo de la programación. Let&amp;rsquo;s GO!
+Control de versiones Empecemos por el principio, un control de versiones es una maravillosa herramienta que nos permite tener un registro de todas las modificaciones en un proyecto, y si en algún paso la regamos y todo el sistema se colapsa, podemos regresar a un estado anterior en donde todo funcionaba de maravilla.</description>
+    </item>
+    
+    <item>
       <title>Jest sir!</title>
       <link>https://felixvelazco.github.io/my_launchx_blog/posts/post_4/</link>
       <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
