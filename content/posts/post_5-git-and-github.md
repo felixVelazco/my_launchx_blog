@@ -42,5 +42,8 @@ copiar la famosa linea de `git clone ...`
 | **Interfaz** | Comandos desde terminal | Interfaz gráfica agradable |
 | **Trabajo en equipo** | No (se necesita github o gitlab) | Si |
 
+
+# Conclusiones
+
 Esto solo fue una explicación breve de lo que nos permiten estas herramientas y sus diferencias. En otro post me gustaría ir un poco más profundo en como usarlas
 sus comandos básicos, y otras cosas más, pero por el día de hoy es todo! Nos vemos en el siguiente post!
